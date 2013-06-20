@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sidebar {
+	background-color: red;
+}
+
+.main-content {
+	background-color: blue;
+}
+
+.sidebar,
+.main-content {
+	color: #fff;
+}
+
+/*------------------------- Relafix -------------------------*/
+.heading {
+	float: left;
+}
+
+.relafix,
+.relafix-cr {
+	width: 15em;
+}
+
+.relafix-cr {
+	position: fixed;
+	text-align: center;
+	background-color: green;
+}
+
+.relafix.type1 {
+	float: right;
+}
+
+.relafix.type2,
+.relafix.type5 {
+	margin: 0 auto;
+}
+
+.sidebar {
+	position: relative;
+}
+
+.relafix.type3 {
+	position: absolute;
+	right: 0;
+}
+.relafix.type4 {
+	float: right;
+}
+
+.relafix.type4 .relafix-cr,
+.relafix.type5 .relafix-cr {
+	bottom: 0;
+}

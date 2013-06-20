@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position: Relafix</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="style.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <h1>Position: Relafix</h1>
+                    <p>A positioned-fixed element which has a parent that can be positioned-absolute or floated.</p>
+                    
+                    <div class="row-fluid">
+                    <div class="span6">
+                    <h2>The HTML markup</h2>                    
+<pre>&lt;div class=&quot;relafix&quot;&gt;
+    &lt;div class=&quot;relafix-cr&quot;&gt;
+          Content
+    &lt;/div&gt;
+&lt;/div&gt;</pre></div>
+                    <div class="span6">
+                    <h2>The CSS</h2>
+<pre>
+.relafix,
+.relafix-cr {
+	width: 15em;
+}
+
+.relafix {
+	float: right;
+}
+
+.relafix-cr {
+	position: fixed;
+}
+</pre>
+</div>
+</div>
+                    <h2>Browser support</h2>
+                    <p>Firefox, Chrome, Safari, IE 7-8</p>
+                    <h2>Test the code</h2>
+                    <p><a href="http://jsbin.com/ebafav/4/edit">http://jsbin.com/ebafav/4/edit</a></p>
+                    <h2>Example</h2>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span4 sidebar">
+                    
+                    <div class="relafix type2">
+                        <div class="relafix-cr">
+                              Fixed, margin: 0 auto;
+                        </div>
+                    </div><!--.relafix-->
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce sagittis. In nec leo ac nibh dictum consectetuer. Phasellus vitae enim et tortor volutpat sollicitudin. Curabitur non ligula. Donec sed arcu vitae eros laoreet hendrerit. Suspendisse elit. Sed dui arcu, mollis vitae, fringilla eget, facilisis id, purus. Vivamus tortor. Nullam massa. Sed metus tortor, scelerisque quis, volutpat at, pretium eu, nisi. Donec lacus pede, suscipit et, suscipit sit amet, iaculis facilisis, tellus. Curabitur bibendum ante ac tellus.</p>
+                    
+                    <div class="relafix type3">
+                        <div class="relafix-cr">
+                              Fixed, absolute right
+                        </div>
+                    </div><!--.relafix-->
+                    
+                    <p>Suspendisse potenti. Phasellus elementum. Nullam nibh arcu, tristique eu, semper sed, semper quis, enim. Aliquam convallis. Aenean vulputate pellentesque lorem. Ut volutpat, eros quis lobortis adipiscing, turpis ligula dignissim arcu, at semper lorem dui sit amet lorem. Mauris at enim eget massa tincidunt pulvinar. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur congue suscipit eros. Fusce justo massa, aliquam id, blandit sed, luctus adipiscing, diam. Nullam purus ligula, sollicitudin ut, adipiscing mollis, volutpat a, eros. Suspendisse nec risus at elit suscipit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus porttitor. Vestibulum ut magna.</p>
+                </div>
+                <div class="span8 main-content">
+                    <div class="clearfix">
+                        <h1 class="heading">Main content</h1>
+                        
+                        <div class="relafix type1">
+                            <div class="relafix-cr">
+                                  Fixed, float: right
+                            </div>
+                        </div><!--.relafix-->
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce sagittis. In nec leo ac nibh dictum consectetuer. Phasellus vitae enim et tortor volutpat sollicitudin. Curabitur non ligula. Donec sed arcu vitae eros laoreet hendrerit. Suspendisse elit. Sed dui arcu, mollis vitae, fringilla eget, facilisis id, purus. Vivamus tortor. Nullam massa. Sed metus tortor, scelerisque quis, volutpat at, pretium eu, nisi. Donec lacus pede, suscipit et, suscipit sit amet, iaculis facilisis, tellus. Curabitur bibendum ante ac tellus.</p>
+                    <p>Suspendisse potenti. Phasellus elementum. Nullam nibh arcu, tristique eu, semper sed, semper quis, enim. Aliquam convallis. Aenean vulputate pellentesque lorem. Ut volutpat, eros quis lobortis adipiscing, turpis ligula dignissim arcu, at semper lorem dui sit amet lorem. Mauris at enim eget massa tincidunt pulvinar. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur congue suscipit eros. Fusce justo massa, aliquam id, blandit sed, luctus adipiscing, diam. Nullam purus ligula, sollicitudin ut, adipiscing mollis, volutpat a, eros. Suspendisse nec risus at elit suscipit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus porttitor. Vestibulum ut magna.</p>
+                    <p>Nam in augue nec justo adipiscing hendrerit. Donec vulputate libero ut est. Nullam turpis. Sed eget eros eget erat posuere egestas. Quisque vulputate consectetuer sapien. Donec facilisis tempor ligula. Integer id nulla quis enim aliquet sollicitudin. Curabitur tellus nunc, luctus ut, pharetra non, eleifend sit amet, turpis. Mauris vitae tortor at elit vehicula imperdiet. Proin porta ante et mi.</p>
+                    <p>Morbi bibendum dictum justo. Nunc non quam. Ut faucibus lectus ultricies justo. Aenean lorem urna, feugiat sit amet, iaculis sit amet, cursus pellentesque, orci. Nunc scelerisque faucibus neque. Ut sollicitudin neque id orci. Vestibulum id metus. Cras nec elit. Aenean sed nisl sit amet justo interdum viverra. Integer tellus velit, elementum eget, feugiat in, ultricies dictum, lacus. Suspendisse id arcu vel nisi dapibus aliquet. Duis scelerisque, nisl in interdum volutpat, lorem mauris egestas velit, in porttitor justo augue sit amet diam. Etiam ipsum ligula, sollicitudin sagittis, bibendum vitae, pellentesque vel, turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed nulla justo, tristique quis, euismod id, ornare quis, ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris sit amet lorem.</p>
+                    <p>Vivamus justo neque, dignissim id, porta et, gravida nec, libero. Pellentesque aliquet turpis vitae diam. Sed diam nisl, volutpat a, imperdiet quis, iaculis sed, turpis. Nullam ac justo. Duis mollis urna nec ante hendrerit convallis. Aliquam eu enim varius arcu facilisis sagittis. Vivamus tristique. Ut elit tortor, sagittis non, pulvinar ac, venenatis ut, diam. Aenean vehicula libero at ante. Pellentesque vel odio non lectus pharetra volutpat. Fusce mi. Maecenas vitae leo ut erat semper mattis. Vestibulum eu nisi quis ipsum lobortis congue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce sagittis. In nec leo ac nibh dictum consectetuer. Phasellus vitae enim et tortor volutpat sollicitudin. Curabitur non ligula. Donec sed arcu vitae eros laoreet hendrerit. Suspendisse elit. Sed dui arcu, mollis vitae, fringilla eget, facilisis id, purus. Vivamus tortor. Nullam massa. Sed metus tortor, scelerisque quis, volutpat at, pretium eu, nisi. Donec lacus pede, suscipit et, suscipit sit amet, iaculis facilisis, tellus. Curabitur bibendum ante ac tellus.</p>
+                    
+                    <div class="relafix type4">
+                        <div class="relafix-cr">
+                              Fixed bottom, float right
+                        </div>
+                    </div><!--.relafix-->
+                    
+                    <p>Suspendisse potenti. Phasellus elementum. Nullam nibh arcu, tristique eu, semper sed, semper quis, enim. Aliquam convallis. Aenean vulputate pellentesque lorem. Ut volutpat, eros quis lobortis adipiscing, turpis ligula dignissim arcu, at semper lorem dui sit amet lorem. Mauris at enim eget massa tincidunt pulvinar. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur congue suscipit eros. Fusce justo massa, aliquam id, blandit sed, luctus adipiscing, diam. Nullam purus ligula, sollicitudin ut, adipiscing mollis, volutpat a, eros. Suspendisse nec risus at elit suscipit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus porttitor. Vestibulum ut magna.</p>
+                    <p>Nam in augue nec justo adipiscing hendrerit. Donec vulputate libero ut est. Nullam turpis. Sed eget eros eget erat posuere egestas. Quisque vulputate consectetuer sapien. Donec facilisis tempor ligula. Integer id nulla quis enim aliquet sollicitudin. Curabitur tellus nunc, luctus ut, pharetra non, eleifend sit amet, turpis. Mauris vitae tortor at elit vehicula imperdiet. Proin porta ante et mi.</p>
+                    <p>Morbi bibendum dictum justo. Nunc non quam. Ut faucibus lectus ultricies justo. Aenean lorem urna, feugiat sit amet, iaculis sit amet, cursus pellentesque, orci. Nunc scelerisque faucibus neque. Ut sollicitudin neque id orci. Vestibulum id metus. Cras nec elit. Aenean sed nisl sit amet justo interdum viverra. Integer tellus velit, elementum eget, feugiat in, ultricies dictum, lacus. Suspendisse id arcu vel nisi dapibus aliquet. Duis scelerisque, nisl in interdum volutpat, lorem mauris egestas velit, in porttitor justo augue sit amet diam. Etiam ipsum ligula, sollicitudin sagittis, bibendum vitae, pellentesque vel, turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed nulla justo, tristique quis, euismod id, ornare quis, ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris sit amet lorem.</p>
+                    <p>Vivamus justo neque, dignissim id, porta et, gravida nec, libero. Pellentesque aliquet turpis vitae diam. Sed diam nisl, volutpat a, imperdiet quis, iaculis sed, turpis. Nullam ac justo. Duis mollis urna nec ante hendrerit convallis. Aliquam eu enim varius arcu facilisis sagittis. Vivamus tristique. Ut elit tortor, sagittis non, pulvinar ac, venenatis ut, diam. Aenean vehicula libero at ante. Pellentesque vel odio non lectus pharetra volutpat. Fusce mi. Maecenas vitae leo ut erat semper mattis. Vestibulum eu nisi quis ipsum lobortis congue.</p>
+                    
+                    <div class="relafix type5">
+                        <div class="relafix-cr">
+                              Fixed, bottom, center
+                        </div>
+                    </div><!--.relafix-->
+                    
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
